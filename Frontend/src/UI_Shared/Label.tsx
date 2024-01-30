@@ -8,7 +8,7 @@ interface Iprops
   children: ReactNode; // Changed "Text" to "text"
 }
 
-const labelVariants = cva([" block text-sm font-medium text-gray-700"], {
+const labelVariants = cva([" mt-1 block text-sm font-medium text-gray-700"], {
   variants: {
     variant: {
       default: "text-black",

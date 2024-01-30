@@ -3,7 +3,7 @@ const LoginList = [
     {
         type: 'email',
         id: "email",
-        name: 'email',
+        name: 'Email Address',
         placeholder:'email'
     },
     {

@@ -23,18 +23,35 @@ function Login() {
       <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md ">
         <div className="bg-shite py-8 px-4 shadow sm:rounded-lg sm:px-10">
           <form className="space-y-6" action="">
-            {LoginList.map((input, index) => (
-              <Fragment key={index}>
-                <Label htmlFor={input.id}>{input.name}</Label>
-                <Input
-                  type={input.type}
-                  name={input.name}
-                  id={input.id}
-                  placeholder={input.placeholder}
-                  value={Login[input.name]}
-                />
-              </Fragment>
-            ))}
+            <div>
+              {LoginList.map((input, index) => (
+                <Fragment key={index}>
+                  <Label htmlFor={input.id}>{input.name}</Label>
+
+                  <Input
+                    type={input.type}
+                    name={input.name}
+                    id={input.id}
+                    placeholder={input.placeholder}
+                    value={Login[input.name]}
+                  />
+                </Fragment>
+              ))}
+            </div>
+            <div className="flex justify-between items-center">
+              <div className="flex flex-row items-center gap-2">
+                <Input className="w-5 h-5 rounded-md m-auto " type="checkbox" />
+                <h2>Remember me</h2>
+              </div>
+              <h4>Forget Your Password</h4>
+            </div>
+            <button className="w-full bg-blue-500 py-4 text-white">
+              Submit
+            </button>
+            <div className="flex flex-row gap-3">
+              <h3>Not have anh account?</h3>
+              <a href="">Sign up</a>
+            </div>
           </form>
         </div>
       </div>
