@@ -2,6 +2,7 @@ import { Fragment, useState } from "react";
 import LoginList from "../Lists/LoginList";
 import Input from "../UI_Shared/Input";
 import Label from "../UI_Shared/Label";
+import Button from "../UI_Shared/Button";
 
 interface ILogin {
   Email: string;
@@ -45,9 +46,11 @@ function Login() {
               </div>
               <h4>Forget Your Password</h4>
             </div>
-            <button className="w-full bg-blue-500 py-4 text-white">
+
+            <Button>
               Submit
-            </button>
+            </Button>
+          
             <div className="flex flex-row gap-3">
               <h3>Not have anh account?</h3>
               <a href="">Sign up</a>
