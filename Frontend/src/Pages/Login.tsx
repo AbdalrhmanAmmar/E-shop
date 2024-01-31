@@ -55,6 +55,7 @@ function Login() {
               <h3>Not have anh account?</h3>
               <a href="">Sign up</a>
             </div>
+            <input type="file" />
           </form>
         </div>
       </div>
