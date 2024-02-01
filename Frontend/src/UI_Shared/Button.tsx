@@ -9,10 +9,11 @@ interface Iprops
   children: ReactNode;
 }
 
-const ButtonVariants = cva(["rounded-md"], {
+const ButtonVariants = cva([""], {
   variants: {
     variant: {
-      default: "w-full bg-blue-500 py-4 text-white",
+      default:
+        "w-full bg-blue-600 hover:bg-blue-700 rounded-md py-2 text-white h-[40px] font-medium border border-transparent text-sm ",
     },
   },
   defaultVariants: {
