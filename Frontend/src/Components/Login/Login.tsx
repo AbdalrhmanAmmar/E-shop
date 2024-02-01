@@ -1,8 +1,8 @@
 import { Fragment, useState } from "react";
-import LoginList from "../Lists/LoginList";
-import Input from "../UI_Shared/Input";
-import Label from "../UI_Shared/Label";
-import Button from "../UI_Shared/Button";
+import LoginList from "../../Lists/LoginList";
+import Input from "../../UI_Shared/Input";
+import Label from "../../UI_Shared/Label";
+import Button from "../../UI_Shared/Button";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
@@ -44,7 +44,6 @@ function Login() {
                       }
                       name={input.name}
                       id={input.id}
-                      placeholder={input.placeholder}
                       value={Login[input.name]}
                     />
                     {input.name === "password" ? (
@@ -94,7 +93,6 @@ function Login() {
                 Sign up
               </Link>
             </div>
-          
           </form>
         </div>
       </div>

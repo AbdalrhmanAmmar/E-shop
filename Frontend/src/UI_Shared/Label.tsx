@@ -13,6 +13,8 @@ const labelVariants = cva([""], {
     variant: {
       default: "text-black  mt-1 block text-sm font-medium text-gray-700",
       checkbox: "ml-2 block text-sm text-gray-900",
+      Upload:
+        "ml-5 flex items-center justify-center border-border-gray-700 font-medium text-sm text-gray-700 shadow-sm px-5 rounded-md py-2 bg-white hover:bg-gray-200  ",
     },
   },
   defaultVariants: {
