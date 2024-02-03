@@ -9,12 +9,14 @@ interface Iprops
 
 const InputVariants = cva(
   [
-    " border-none block w-full  px-3 py-2 rounded-md border border-gray-300 placeholder-gray-400 shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm",
+    " block w-full px-3 py-2 rounded-md border-[2px] border-gray-300 placeholder-gray-400 shadow-sm sm:text-sm",
   ],
   {
     variants: {
       variant: {
-        default: "border-2 border-black",
+        default:
+          "border-2 border-black focus:outline-none focus:border-blue-500 border-gray-300",
+        search: "h-[40px] w-full px-2 border-[#3957db] border-[2px] rounded-md",
       },
     },
     defaultVariants: {
